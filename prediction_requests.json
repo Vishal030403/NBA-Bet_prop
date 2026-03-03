@@ -1,0 +1,15 @@
+{
+    "date": "2024-03-15",
+    "player_name": "Luka Don\u010di\u0107",
+    "opponent": "Boston Celtics",
+    "is_b2b": 1,
+    "pts_roll5": 32.4,
+    "pts_roll10": 30.1,
+    "mp_roll5": 36.8,
+    "fg_pct": 0.465,
+    "usage_proxy": 30.0,
+    "opp_def": 112.2,
+    "rest": 2.0,
+    "mp_std10": 3.0,
+    "timestamp": "2026-02-24T14:12:42.424788"
+}

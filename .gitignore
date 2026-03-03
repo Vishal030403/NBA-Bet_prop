@@ -1,0 +1,44 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+bin/
+lib/
+include/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.pyo
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+
+
+
+
+# Generated Reports & Charts
+
+failed attempts/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# OS specific
+*.dll
+*.exe
+*.so
