@@ -26,7 +26,7 @@ teams = [
 ]
 
 # ---------- MODEL LOAD ----------
-MODEL_PATH = "nba_prop_model.pkl"
+MODEL_PATH = "model/nba_prop_model.pkl"
 
 if not os.path.exists(MODEL_PATH):
     st.error("❌ Model file not found.")
