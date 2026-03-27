@@ -25,7 +25,7 @@ jobs:
 
     - name: Check model file exists
       run: |
-        if [ ! -f Model/nba_prop_model.pkl ]; then
+        if [ ! -f model/nba_prop_model.pkl ]; then
           echo "Model file missing!"
           exit 1
         fi
