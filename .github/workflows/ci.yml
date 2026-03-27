@@ -1,0 +1,39 @@
+name: NBA CI Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Check model file exists
+      run: |
+        if [ ! -f Model/nba_prop_model.pkl ]; then
+          echo "Model file missing!"
+          exit 1
+        fi
+
+    - name: Run basic app test
+      run: |
+        python -c "import joblib; joblib.load('model/nba_prop_model.pkl')"
+
+    - name: Build Docker image
+      run: |
+        docker build -t nba-prop-analyser .
